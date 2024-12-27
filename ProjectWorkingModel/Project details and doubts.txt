@@ -1,0 +1,15 @@
+Your project is focused on detecting Denial of Service (DoS) attacks using Python.
+
+Project Overview:
+Target (Victim): A machine or server, such as a Windows machine or a web server, that could be the target of a DoS attack. A DoS attack occurs when a single source overwhelms the target with excessive traffic, causing it to slow down or crash.
+
+Monitoring (Detection): You use an Ubuntu machine to monitor the network traffic directed at the target. The monitoring system runs a Python script that watches for unusual patterns, such as a high volume of traffic from a single IP address.
+
+Attack Simulation: On a Kali Linux machine, you simulate a DoS attack by sending a flood of requests to the target using tools like hping3.
+
+Python Script: The script captures and analyzes the network traffic in real-time. If it detects an unusual spike in traffic from one IP address that exceeds a predefined threshold, it raises an alert. This alert not only identifies the suspicious IP but also sends an email notification to warn about the potential attack.
+
+Why This Matters:
+The goal of your project is to enhance DoS attack detection by identifying the attacker’s IP address and notifying the relevant parties in real-time. Detecting a DoS attack quickly is crucial because it allows for swift action to mitigate the attack and prevent the target from being overwhelmed.
+
+In essence, your project is about building a system that continuously monitors a target, detects when it’s under a DoS attack, and alerts the necessary people to take immediate action.
