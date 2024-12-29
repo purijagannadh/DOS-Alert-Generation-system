@@ -10,3 +10,11 @@ The Enhanced Alert Generation System with Attacker IP for DoS Attacks is a real-
 - ✅ **Threshold-Based Alerts:** Triggers alerts when traffic surpasses a predefined packet threshold.
 - ✅ **Email Notifications:** Sends detailed alerts via email for immediate action.
 - ✅ **Customizable Parameters:** Allows adjustment of detection thresholds and monitoring configurations.
+
+## 🛡️ System Requirements
+- Ubuntu (Monitoring Machine)
+- KaliLinux (Attacking Machine)
+- Windows (victim)
+- Python 3.x
+- PyShark Library
+- Internet Access (for sending email alerts)
