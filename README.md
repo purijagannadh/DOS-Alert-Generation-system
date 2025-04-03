@@ -33,3 +33,7 @@ Upon detection, the system triggers email alerts containing:
 ```bash
 git clone https://github.com/yourusername/DOS-Alert-Generation-System.git
 cd DOS-Alert-Generation-System
+
+### **2️⃣ Install Dependencies**
+~~~bash
+pip install -r requirements.txt
