@@ -33,7 +33,35 @@ Upon detection, the system triggers email alerts containing:
 ```bash
 git clone https://github.com/yourusername/DOS-Alert-Generation-System.git
 cd DOS-Alert-Generation-System
+```
 
 ### **2️⃣ Install Dependencies**
-~~~bash
+```bash
 pip install -r requirements.txt
+```
+
+### **3️⃣ Configure Email Alerts**
+Edit the config.py file and set up your email alerts:
+```bash
+EMAIL_SENDER = "your_email@gmail.com"
+EMAIL_PASSWORD = "your_app_password"
+THRESHOLD = 20  # Packets per second threshold
+```
+
+### **4️⃣ Run the Detection System**
+```bash
+python src/main.py
+```
+---
+
+##📧 Email Alert Format
+### **📌 Email Body:**
+```yaml
+A potential DoS attack has been detected.
+
+🔹 Attacker IP: 192.168.1.100
+🔹 Packets per Second: 50
+🔹 Detection Time: 2024-04-03 14:25:30
+
+Please take immediate action to prevent further damage.
+```
